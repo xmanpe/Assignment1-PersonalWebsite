@@ -1,0 +1,110 @@
+body{
+    background: url(images/whitebg.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0%;
+    justify-content: space-between;
+    background-color: white;
+    height: 149px;
+    font-size: 38px;
+    box-shadow: 0 0 50px rgba(192, 192, 192, 0.5);;
+    width: 100%;
+    z-index: 9999;
+}
+#logo{
+    font-family: "roboto";
+    font-weight: bold;
+    margin-top: 52px;
+    margin-left: 90px;
+}
+#logo a{
+    text-decoration: none;
+    color: black;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    margin-right: 90px;
+    margin-top: 53px;
+}
+#menu ul li{
+    margin-left: 58px;
+}
+#menu ul li a{
+    font-weight: 350;
+    font-family: Bebas Neue Pro;
+    text-decoration: none;
+    color: #9A9A9A;
+}
+#menu ul li a:hover, #menu ul li a.active{
+    color: black;
+    font-weight: bold;
+}
+#highlight1{
+    display: flex;
+    margin-top: 221px;
+    justify-content: center;
+}
+#highlight1 .box img{
+    height: 300px;
+    margin: 10px;
+    transition: transform .2s;
+}
+#highlight1 .box img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#highlight2{
+    display: flex;
+    justify-content: center;
+}
+#highlight2 .box img{
+    height: 300px;
+    margin: 10px;
+    transition: transform .2s;
+    margin-top: 5px;
+}
+#highlight2 .box img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#highlight3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+#highlight3 .box img{
+    height: 300px;
+    margin: 10px;
+    transition: transform .2s;
+    margin-top: 5px;
+}
+#highlight3 .box img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: url(images/blackbg.jpg);
+    }
+    .navbar{
+        background-color: rgb(14, 14, 14);
+        box-shadow: 0 0 50px rgba(43, 43, 43, 0.5);
+    }
+    #logo a{
+        color: rgb(255, 255, 255);
+    }
+    #menu ul li a{
+        color: #C5C5C5;
+    }
+    #menu ul li a:hover, #menu ul li a.active{
+        color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,151 @@
+body{
+    background: url(images/whitebg.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0%;
+    justify-content: space-between;
+    background-color: white;
+    height: 149px;
+    font-size: 38px;
+    box-shadow: 0 0 50px rgba(192, 192, 192, 0.5);;
+    width: 100%;
+}
+#logo{
+    font-family: "roboto";
+    font-weight: bold;
+    margin-top: 52px;
+    margin-left: 90px;
+}
+#logo a{
+    text-decoration: none;
+    color: black;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    margin-right: 90px;
+    margin-top: 53px;
+}
+#menu ul li{
+    margin-left: 58px;
+
+}
+#menu ul li a{
+    font-weight: 350;
+    font-family: Bebas Neue Pro;
+    text-decoration: none;
+    color: #9A9A9A;
+}
+#menu ul li a:hover, #menu ul li a.active{
+    color: black;
+    font-weight: bold;
+}
+#kotak{
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 278px;
+    margin-right: 278px;
+    margin-top: 221px;
+    margin-bottom: 72px;
+    display: flex;
+}
+#kotakkanan{
+    margin-left: 44px;
+    margin-right: 36px;
+    margin-bottom: 36px;
+}
+#picture{
+    margin-left: 36px;
+}
+#picture img{
+    margin-top: 36px;
+    width: 387px;
+    height: 644px;
+    margin-bottom: 36px;
+    object-fit: cover;
+}
+#nama{
+    margin-top: 36px;
+    font-family: "Bebas Neue Pro";
+    font-size: 60px;
+    font-weight: 350;
+}
+#nama a{
+    font-weight: bold;
+}
+#introduction p{
+    font-family: "Bebas Neue Pro";
+    font-size: 27px;
+}
+#button{
+    margin-top: 88px;
+    text-align: center;
+    background-color: black;
+    width: 306px;
+    height: 72px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+#button a{
+    line-height: 72px;
+    font-size: 26px;
+    font-family: "Bebas Neue Pro";
+    color: white;
+    text-decoration: none;
+}
+#button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.sosialmedia{
+    margin-top: 0;
+    display: inline-flex;
+    float: right;
+}
+.sosialmedia img{
+    margin-left: 14px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.sosialmedia img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: url(images/blackbg.jpg);
+    }
+    .navbar{
+        background-color: rgb(14, 14, 14);
+        box-shadow: 0 0 50px rgba(43, 43, 43, 0.5);
+    }
+    #logo a{
+        color: rgb(255, 255, 255);
+    }
+    #menu ul li a{
+        color: #C5C5C5;
+    }
+    #menu ul li a:hover, #menu ul li a.active{
+        color: rgb(255, 255, 255);
+    }
+    #kotak{
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+    #kotakkanan{
+        color: white;
+    }
+    #button{
+        background-color: rgb(255, 255, 255);
+    }
+    #button a{
+        color: rgb(0, 0, 0);
+    }
+}

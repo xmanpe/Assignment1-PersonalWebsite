@@ -1,0 +1,26 @@
+        <div id="button">
+            <a href="about.html">ABOUT ME</a>
+        </div>
+
+
+
+
+
+#button{
+    background: black;
+    width: 306px;
+    line-height: 72px;
+    margin: auto;
+    margin-bottom: 200px;
+    transition: transform .2s;
+}
+#button a{
+    font-size: 26px;
+    font-family: "Bebas Neue Pro";
+    text-decoration: none;
+    color: white;
+}
+#button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

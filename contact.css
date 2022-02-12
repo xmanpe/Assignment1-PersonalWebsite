@@ -1,0 +1,128 @@
+body{
+    background: url(images/whitebg.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0%;
+    justify-content: space-between;
+    background-color: white;
+    height: 149px;
+    font-size: 38px;
+    box-shadow: 0 0 50px rgba(192, 192, 192, 0.5);;
+    width: 100%;
+}
+#logo{
+    font-family: "roboto";
+    font-weight: bold;
+    margin-top: 52px;
+    margin-left: 90px;
+}
+#logo a{
+    text-decoration: none;
+    color: black;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    margin-right: 90px;
+    margin-top: 53px;
+}
+#menu ul li{
+    margin-left: 58px;
+
+}
+#menu ul li a{
+    font-family: Bebas Neue Pro;
+    text-decoration: none;
+    color: #9A9A9A;
+}
+#menu ul li a:hover, #menu ul li a.active{
+    color: black;
+    font-weight: bold;
+}
+#kotak{
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 221px;
+    padding: 20px;
+    font-family: "Bebas Neue Pro";
+    margin-left: 431px;
+    margin-right: 431px;
+    margin-bottom: 72px;
+}
+input[type=text], select, textarea{
+    font-size: 27px;
+    font-family: "Bebas Neue Pro";
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 36px auto;
+    font-family: "Bebas Neue Pro";
+    font-size: 26px;
+    background-color: black;
+    color: white;
+    width: 306px;
+    height: 72px;
+    border: none;
+    cursor: pointer;
+    transition: transform .2s;
+}
+input[type=submit]:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-weight: normal;
+    font-size: 60px;
+    font-family: "Bebas Neue Pro";
+    text-align: center;
+}
+h1 a{
+    font-weight: bold;
+}
+@media (prefers-color-scheme: dark){
+    body{
+        background: url(images/blackbg.jpg);
+    }
+    .navbar{
+        background-color: rgb(14, 14, 14);
+        box-shadow: 0 0 50px rgba(43, 43, 43, 0.5);
+    }
+    #logo a{
+        color: rgb(255, 255, 255);
+    }
+    #menu ul li a{
+        color: #C5C5C5;
+    }
+    #menu ul li a:hover, #menu ul li a.active{
+        color: rgb(255, 255, 255);
+    }
+    #kotak{
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(255, 255, 255);
+    }
+    input[type=text], select, textarea{
+        color: white;
+        background-color: black;
+        border: 1px solid rgb(68, 68, 68);
+    }
+    input[type=submit]{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+}
