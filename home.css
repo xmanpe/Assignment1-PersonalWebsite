@@ -4,6 +4,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+}
 .navbar{
     overflow: hidden;
     position: fixed;
@@ -110,9 +115,10 @@ body{
         border: 1px solid rgb(255, 255, 255);
     }
     #button{
-        background: rgb(255, 255, 255);
+        background: black;
+        border: 1px solid white;
     }
     #button a{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 }

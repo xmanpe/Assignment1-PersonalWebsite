@@ -4,6 +4,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+}
 .navbar{
     overflow: hidden;
     position: fixed;
@@ -59,6 +64,7 @@ body{
 #highlight1 .box img:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
 }
 #highlight2{
     display: flex;
@@ -73,6 +79,7 @@ body{
 #highlight2 .box img:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(0, 0, 0);
 }
 #highlight3{
     display: flex;
@@ -88,6 +95,7 @@ body{
 #highlight3 .box img:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 @media (prefers-color-scheme: dark){
@@ -109,5 +117,14 @@ body{
     }
     #menu ul li a:hover, #menu ul li a.active{
         color: rgb(255, 255, 255);
+    }
+    #highlight1 .box img:hover{
+        border: 1px solid rgb(255, 255, 255);
+    }
+    #highlight2 .box img:hover{
+        border: 1px solid rgb(255, 255, 255);
+    }
+    #highlight3 .box img:hover{
+        border: 1px solid rgb(255, 255, 255);
     }
 }
